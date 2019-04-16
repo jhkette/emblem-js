@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Crimson+Text|Work+Sans');
+    </style>
+    <!--[if lt IE 9]>
+    <script src="./js/html5shiv.js"></script> 
+    <![endif]-->
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <title>Contact us - Emblem Collectible Books</title>
+</head>
+    <body>
+        <header class="mainheader" role="banner">
+            <div class="skiplink">
+                <a href="#content" title="Go to main content of
+                        page">Skip to main content</a>
+            </div>
+            <div class="commonlinkscontainer">
+                <nav class="commonlinks" role="navigation">
+                    <ul>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Accessibility</a></li>
+                        <li><a href="#">Login</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="logonav">
+                <a class="no-underline" href="index.html">
+                            <div class="nav-header">
+                                <div class="logo"></div>
+                                <h1>Emblem <span class="smaller">Collectible Books</span></h1>
+                            </div>
+                        </a>
+                <nav role="navigation">
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="books.html">Books</a></li>
+                        <li><a href="delivery.html">Delivery</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Books as an investment</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+
+
+        <div class="leadimage" role="banner" id="contact">
+            <!-- cc license from  pixabay-->
+
+        </div>
+        <nav class="breadcrumbs" role="navigation">
+            <ul>
+                <li><a href="index.html">Home</a><i class="arrow right"></i></li>
+                <li><a href="#" id="currentpage">Contact</a><i class="arrow right"></i></li>
+            </ul>
+        </nav>
+
+        <main role="main" id="content" class="main-container">
+            <h2 class="intro">Contact us</h2>
+            <p>Please feel free to contact is if you are looking to buy a book not listed in our collection, or you are
+                looking to sell a book,
+                have a book valued or have a book repaired. We try to answer all queries within 24 hours of receipt. </p>
+            <div class="flexmain">
+                <form method="POST" action="#" role="form">
+                    <fieldset>
+                        <legend>Contact form</legend>
+                        <div class="controlgroup">
+                            <label for="title">Title</label>
+                            <select name="title" id="title">
+                                <option value="Mr">Mr</option>
+                                <option value="Mrs">Mrs</option>
+                                <option value="Ms">Ms</option>
+                                <option value="Miss">Miss</option>
+                                <option value="Dr">Dr</option>
+                                <option value="Prof">Prof</option>
+                            </select>
+                        </div>
+                        <div class="controlgroup">
+                            <label for="name">Your name:<sup>*</sup></label>
+                            <input required type="text" aria-required="true" name="name" id="name">
+                        </div>
+
+                        <div class="controlgroup">
+                            <label for="email">Email address:<sup>*</sup></label>
+                            <input required type="email" aria-required="true" name="email" id="email" placeholder="Your full email address">
+                        </div>
+                        <div class="controlgroup">
+                            <label for="query">Nature of query</label>
+                            <select name="query" id="query">
+                                <option value="Buy books">Buy books</option>
+                                <option value="Sell books">Sell books</option>
+                                <option value="Return a book">Return a book</option>
+                                <option value="Delivery">Delivery</option>
+                                <option value="Complaint">Complaint</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+                        <div class="controlgroup">
+                            <label for="msg">Message:<sup>*</sup></label>
+                            <textarea required="required" aria-required="true" placeholder="Type your message here..."
+                                name="message" id="msg"></textarea>
+                        </div>
+                        <input type="submit" id="submit" name="sendmessage" value="Send">
+                    </fieldset>
+                </form>
+                <a href="delivery.html" class="no-underline">
+                    <aside class="deliveryinfo" role="complementary">
+                        <h3>Interested in delivery rates?</h3>
+                        <p>All deliveries are included in the price of the book for books over £500. All goods are sent
+                            first class.</p>
+                    </aside>
+                </a>
+            </div>
+        </main>
+        <div class="container-footer">
+            <footer role="contentinfo">
+                <div>
+                    <h4>Information</h4>
+                    <nav class="footer" role="navigation">
+                        <ul>
+                            <li><a href="#">Our Guarantee</a></li>
+                            <li><a href="#">Shipping</a></li>
+                            <li><a href="#">Terms & Conditions</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div>
+                    <h4>Social</h4>
+                    <nav class="footer" role="navigation">
+                        <ul>
+                            <li><a href="#">Twitter</a></li>
+                            <li><a href="#">Instagram</a></li>
+                            <li><a href="#">Facebook</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div>
+                    <h4>Press and Privacy</h4>
+                    <nav class="footer" role="navigation">
+                        <ul>
+                            <li><a href="#">Press</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Cookies</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </footer>
+        </div>
+    </body>
+
+</html>

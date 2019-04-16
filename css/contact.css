@@ -1,0 +1,183 @@
+/* -----------Contact css ------- */
+
+/* containers */
+
+
+
+.flexmain{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+#contact{
+        height: 15em;
+         background-image: url('../images/contact/contact.jpg'); 
+        background-position: top;
+}
+#contact::before{
+    background: none;
+}
+
+/*------------ Form styling------- */
+
+form{
+    width: 45%;
+    margin: 1em 0 3em 0;
+    padding: 1.6em;
+    display: inline-block;
+    border-top: 1px solid #236841;
+    border-bottom: 1px solid #236841;
+}
+
+
+fieldset{
+    border: 0;
+}
+
+legend{
+    font-family: 'Crimson Text', Georgia, serif;
+    font-size: 1.8em;
+    margin-bottom: 1.5em;
+}
+
+select {
+    font-size: .9em;
+    width: 12em;
+}
+
+sup{
+    font-size: .7em;
+    color: #ff0000;
+}
+#title{
+    width: 5em;
+}
+input{
+    width: 25em;
+    height: 3em;
+    border-radius: .1em;
+    border: 1px solid rgba(148, 148, 148, 0.885);
+    margin-bottom: 1em;
+  
+}
+input[type=submit] { background-color: #236841;
+    font-weight: 700;
+    color: white;
+    width: 10em;
+    height: 2.7em;
+    font-size: 1em;
+    font-weight: normal;
+    font-family: 'Work Sans', Helvetica, Arial, sans-serif;
+    border: 0;
+    border-radius: .25em;
+    margin-top: .4em;
+    /* stops weird iphone rendering */
+    -webkit-appearance: none;
+}
+
+input[type=submit]:hover , input[type=submit]:focus {
+    background-color: #1a1a1a;
+    transition: .3s;
+    cursor: pointer;
+
+}
+
+
+label {
+    font-family: 'Crimson Text', Georgia, serif;
+    font-size: 1.3em;
+    margin-bottom: .25em;
+    font-weight: 900;
+    margin-bottom: .5em;
+}
+
+.controlgroup{
+    display: flex;
+    flex-direction: column;
+}
+
+textarea{
+    color: gray;
+    font-style: italic;
+    font-family: 'Work Sans', Helvetica, Arial, sans-serif;
+    height: 10em;
+    width: 23.5em;
+    border: 1px solid rgba(148, 148, 148, 0.885);
+    border-radius: .2em;
+   
+   
+}
+textarea::placeholder{
+    font-size: 12px;
+}
+
+input::placeholder{
+    font-size: 12px;
+}
+/* email contact */
+
+#email{
+    color: gray;
+    font-style: italic;
+    font-family: 'Work Sans', Helvetica, Arial, sans-serif;
+    
+    
+}
+
+.controlgroup {
+    margin-bottom: 1em;
+}
+
+/* delivery aside styling */
+.deliveryinfo{
+   
+    background-color: #226841;
+    padding: 2em 1.4em 3em 1.4em;
+    width: 22em;
+    color: #f5f5f5;
+    margin: 3em 0;
+}
+
+.deliveryinfo h3{
+    border-bottom: 1px solid #f5f5f5; 
+    line-height: 1.3em;
+    font-size: 1.4em;
+}
+
+
+
+.deliveryinfo:hover,  .deliveryinfo:focus{
+    background-color: #1a1a1a;
+    transition: .3s;
+    cursor: pointer;
+    text-decoration: none;
+   
+}
+
+
+
+@media (max-width:1080px) {
+    form{ width: 85%;
+
+    }
+    .flexmain{
+        flex-direction: column;
+        align-items: flex-start;
+    } 
+}
+
+@media (max-width:660px) {
+    .deliveryinfo{
+        width: 85%;
+    } 
+    form {
+        border: 0;
+        padding: 0;
+        margin: 2em 0 3em 0;
+    }
+    #contact{
+        display: none;
+    }
+  
+}

@@ -1,0 +1,74 @@
+table {
+    margin: 2em 0;
+    font-size: 1.15em;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 80%;
+    
+}
+
+
+table,
+td,
+th {
+    border: 1px solid #000;
+}
+
+details{
+    position: relative;
+}
+
+summary{
+    position: absolute;
+    left: -2000px;
+    top: -2000px;
+}
+
+th {
+    font-weight: 900;
+}
+
+td,
+th {
+    padding: .3em;
+    text-align: center;
+}
+
+tr:first-child {
+    background-color: #ededed;
+}
+
+caption {
+    text-align: left;
+    margin-bottom: 1em;
+    text-decoration: underline;
+    font-weight: 900;
+}
+
+
+@media (max-width:1080px) {
+    table{
+        width: 100%;
+    }
+ 
+}
+
+
+@media (max-width:660px) {
+    /* font-size needs to be smaller to ensure table fits naturally on smaller screens */
+    table{
+        font-size: .8em;
+    
+    }
+
+    caption{
+        font-size: 1.2em
+    }
+
+    td,
+    th {
+    padding: .05em;
+   
+}
+ 
+}

@@ -1,0 +1,949 @@
+/* import font */
+@font-face {
+  font-family: Parisr;
+  src: url('../fonts/parisr.woff') format("woff"),
+    url('../fonts/parisr.eot?#iefix') format("embedded-opentype"),
+    url('../fonts/parisr.ttf') format("truetype"),
+    url('../fonts/parisr.svg#Parisr') format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* browser resest */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* display all html5 elements as blocks */
+section,
+article,
+header,
+footer,
+nav,
+aside,
+main {
+  display: block;
+}
+
+
+/* global font-styles */
+body {
+  font-family: 'Work Sans', sans-serif;
+  color: #1a1a1a;
+  line-height: 1em;
+}
+
+.skiplink {
+  position: absolute;
+  left: -10000px;
+}
+
+.skiplink:focus {
+  left: 0;
+  background-color: #4c712b;
+  color: #ffff00;
+}
+
+/*-----global typography----------------- */
+h1 {
+  font-family: 'Parisr', serif;
+  font-size: 2.9em;
+  display: block;
+  line-height: .6em;
+  color: #1a1a1a;
+  font-weight: 300;
+  display: inline-block;
+  text-rendering: geometricPrecision;
+}
+
+ h2, h3, h4{
+  font-family: 'Crimson Text', serif;
+  text-rendering: geometricPrecision;
+  
+}
+
+
+h2 {
+  font-size: 2.3em;
+  padding-bottom: .35em;
+}
+
+/* H2 heading for every page that isn't the home page */
+.intro {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  border-bottom: 1px solid #1a1a1a;
+}
+
+h3 {
+  font-size: 1.5em;
+  margin: .5em 0 .7em 0;
+  font-weight: 200;
+  text-transform: uppercase;
+  border-bottom: 1px solid #1a1a1a;
+  padding-bottom: .3em;
+  
+}
+
+h4 {
+  font-size: 1.4em;
+  margin: .5em 0 1em 0;
+  font-weight: 200;
+  
+  padding-bottom: .25em;
+ 
+}
+
+h4 span {
+  padding-top: .25em;
+}
+
+p {
+  font-size: 1.15em;
+  margin: 1em 0;
+  line-height: 1.6em;
+  font-weight: 500;
+  text-rendering: optimizeLegibility;
+}
+
+li, dt, dl {
+  line-height: 1.4em;
+}
+
+figcaption {
+  font-size: .7em;
+  margin-top: .7em;
+  font-weight: 500;
+  font-style: italic;
+
+}
+
+p a {
+  color: #236841;
+  font-weight: 900;
+}
+
+ /* This ensures there is no underline effect on links */
+ .no-underline {
+  text-decoration: none;
+}
+
+
+.smaller {
+  font-size: .45em;
+  display: block;
+  margin-left: .2em;
+
+}
+
+/* header text */
+#mainheader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: #ededed;
+  box-shadow: 0 4px 6px -4px #a7a4a4;
+  z-index: 1;
+  transition: .6s
+}
+
+/*------- Global container used throughout project ---------*/
+.main-container{
+  padding: 3em 0;
+  width: 85%; 
+  max-width: 1400px;
+  margin: auto;
+}
+
+/* Global container styles -used frequently */
+.main-container ul{
+  list-style: none;
+}
+.main-container ul li{
+  padding-bottom: .4em;
+  font-size: 1.15em;
+  text-rendering: optimizeLegibility;
+}
+
+
+/* commonlinks */
+.commonlinks {
+  width: 85%;
+  max-width: 1400px;
+  margin: auto;
+}
+
+#commonlinkscontainer {
+  border-bottom: 1px solid #ddd;
+  height: 1.55em;
+  width: 100%;
+  position: relative;
+  top: 0;
+ 
+  transition: .3s;
+
+}
+
+.commonlinks ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: .25em;
+}
+
+.commonlinks li {
+  font-size: .85em;
+  padding-left: 1em;
+}
+
+.commonlinks li a {
+  color: #1a1a1a;
+  text-decoration: none;
+}
+
+.commonlinks li a:hover,
+.commonlinks li a:focus {
+  text-decoration: underline;
+}
+/*----- Logo styles ------ */
+.logonav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1em 0 .4em 0;
+  width: 85%;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.nav-header {
+  display: block;
+  width: 17em;
+  margin-bottom: 1em;
+  display: flex;
+align-items: flex-end;
+}
+
+.logo {
+  background-image: url('../images/logos/logo.png');
+  height: 74px;
+  width: 96px;
+  display: inline-block;
+  background-position: center;
+  margin-right: .2em;
+}
+
+/*--------- breadcrumbs navigation ----------*/
+
+.breadcrumbs {
+  width: 85%;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.breadcrumbs ul {
+  margin-top: 1.5em;
+  list-style: none;
+  font-size: .95em;
+}
+
+.breadcrumbs li {
+  width: auto;
+  /* padding: 0 .8em .3em .8em; */
+  margin-right: 1em;
+  display: inline-block;
+  font-weight: 100;
+}
+
+.breadcrumbs li a {
+  color: #236841;
+  text-decoration: none;
+}
+
+.breadcrumbs li a:hover,
+.breadcrumbs li a:focus {
+  color: #236841;
+  text-decoration: underline;
+}
+
+#currentpage {
+  text-decoration: underline;
+  font-weight: 900;
+}
+
+
+/* icon for breadcrumbs */
+i {
+  border: solid black;
+  border-width: 0 1px 1px 0;
+  display: inline-block;
+  padding: 3.5px;
+  margin-left: 5px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+/*--------------- main navigation------------------ */
+
+.nav-links li {
+  list-style: none;
+  display: inline-block;
+  font-size: 1.2em;
+  font-weight: 400;
+  font-family: 'Work Sans', sans-serif;
+  
+}
+
+.nav-links li a {
+  margin: .4em .3em;
+  text-decoration: none;
+  color: #1a1a1a;
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+  color: #226841;
+  transition-duration: .1s;
+
+}
+
+#current {
+  border-bottom: 2px solid #226841;
+}
+
+/*Media queries for header navigation - tablet */
+@media (min-width: 661px) and (max-width: 1080px) {
+  .logonav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    margin-bottom: 1em;
+  }
+  
+}
+/*Media queries for header navigation - mobile */
+@media (max-width:660px) {
+  nav {
+    width: 100%;
+  }
+  
+
+  #current {
+
+    background-color: #ededed;
+    color: #236841;
+    border-bottom: 1px solid #535353;
+    font-weight: 900;
+  }
+
+  #current:hover,
+  #current:focus {
+    color: #226841;
+  }
+
+  .logonav {
+    flex-direction: column;
+    width: 85%;
+    max-width: 1400px;
+  }
+
+  .nav-links {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #ededed;
+  }
+
+  .nav-links li a {
+    display: block;
+    color: #1a1a1a;
+    border-bottom: 1px solid #535353;
+    padding-bottom: .2em;
+  }
+
+  .nav-links li a:hover, a:focus {
+    border-bottom: 1px solid #535353;
+    background-color: #ededed;
+    color: #226841;
+    width: fit-content;
+    font-weight: 900;
+  }
+  /* because lines wrap */
+  h3{
+    line-height: 1.1em;
+  }
+}
+
+/* ------------------Lead image and  Our Business, Our Books, Invest in Books section ------------------------ */
+
+.leadimage:before {
+  content: '';
+position: absolute;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+background: linear-gradient(45deg, rgba(0,0,0,0.75) 0%,rgba(0,0,0,0) 100%);
+opacity: .55; 
+}
+
+
+
+.leadimage {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  width: 100%;
+  z-index: 0;
+
+}
+
+#lead{
+  height: 35em;
+  background-image: url('../images/home/largebookshelf.jpg');
+ 
+}
+
+.leadimage h2 {
+  color: #f5f5f5;
+  margin-top: .2em;
+  font-size: 3.5em;
+  line-height: .7em;
+  padding-bottom: .25em;
+
+
+  
+}
+
+.leadimage p {
+  line-height: 1.3em;
+  color: #f5f5f5;
+  margin: .5em 0 .4em 0em;
+  font-size: 1.55em;
+  font-weight: 500;
+
+}
+
+
+
+.positiontext {
+  width: 85%;
+  max-width: 1400px;
+  margin: auto;
+  max-width: 1400px;
+}
+
+.main-button {
+ 
+
+  background-color:  rgba(35, 104, 65, 0.9);
+  color: #f5f5f5;
+  padding: .85em 2em;
+  font-size: 1.1em;
+  border-radius: .15em;
+  margin-top: .8em;
+  position: absolute;
+  z-index: 200;
+  text-decoration: none;
+
+}
+
+.main-button.dark {
+  border: 1px solid #1a1a1a;
+  background-color: rgba(255, 255, 255, 0);
+  color: #1a1a1a;
+  padding: .85em 2em;
+  margin: 0 0 3em 0;
+  text-decoration: none;
+  font-weight: normal;
+  position: unset;
+}
+
+.main-button:hover,
+.main-button:focus {
+  background-color:  #1a1a1a;
+  color: #f5f5f5;
+  transition: .2s;
+  text-decoration: none;
+}
+
+.main-button.dark:hover,
+.main-button.dark:focus {
+  background-color: #1a1a1a;
+  color: #f5f5f5;
+  transition: .2s;
+  border: 1px solid #f5f5f5;
+}
+
+
+.heading-text {
+  width: auto;
+  height: 14em;
+  position: relative;
+  top: 13em;
+  display: inline-block;
+  width: 37em;
+  z-index:100;
+}
+
+main {
+  width: 100%;
+}
+
+.intro-container {
+  width: 85%;
+  max-width: 1400px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 2em 0 3em 0;
+  justify-content: space-between;
+}
+.intro-col {
+  width: 22.5em;
+  text-align: left;
+  margin-top: 1em;
+}
+
+.centervideo{
+  width: 22.5em;
+}
+
+
+video {
+  display: block;
+  width: 100%;
+}
+
+/* CSS for images to the right of video with hover effect */
+.parentimage {
+  width: 22.5em;
+  height: 16.875em;
+  margin: auto;
+  overflow: hidden;
+}
+
+.colimage {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-repeat: no-repeat;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s;
+  background-position: center;
+}
+
+.colimage span {
+  display: none;
+}
+
+#about {
+  background-image: url('../images/home/gatsby.jpg');
+  /* background-position: center; */
+}
+
+#book {
+  background-image: url('../images/home/stevenson400.jpg');
+
+}
+
+.colimage:before {
+  content: "";
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(145, 180, 162, 0.897);
+}
+
+.parentimage:hover .colimage:before,
+.parentimage:focus .colimage:before {
+  display: block;
+}
+
+.parentimage:hover .abouttext,
+.parentimage:focus .abouttext{
+  display: block;
+}
+
+
+.parentimage:hover .colimage,
+.parentimage:focus .colimage {
+  transform: scale(1.2);
+}
+
+.abouttext {
+  color: white;
+  font-size: 1.7em;
+  font-family: 'Crimson Text', serif;
+  margin: auto;
+  top: 0;
+  left:0;
+  right:0;
+  position:absolute;
+  text-align:center;
+  padding: .4em;
+  margin-top: 3.8em;
+  width: 80%;
+}
+
+
+
+/* Tablet breaking point for lead image and three features - Our Business, Our Books, Invest in Books 
+I'm not using an '& min width' here as some css will continue to be used by smaller screens (ie below 660px) */
+@media (max-width:1080px) {
+  .heading-text {
+    top: 12.5em;
+  }
+
+  .intro-container {
+    flex-direction: column;
+    width: 85%;
+  }
+
+  .intro-col {
+    width: 100%;
+    margin: 1em auto;
+  }
+
+
+  .parentimage {
+    width: 25em;
+    margin: auto;
+    height: 18.75em;
+  }
+
+  .centervideo {
+    width: 25em;
+    margin: auto;
+  }
+
+  /* video needs to be smaller on smaller screens - otherwise width is defined in html  */
+  
+
+}
+
+
+/* Mobile breaking point for lead image and three features - Our Business, Our Books, Invest in Books 
+The mobile still takes some css from tablet css above */
+@media (max-width:660px) {
+  /* lead image and text is smaller on mob */
+  #lead{
+    height: 28em;
+  }
+
+  .heading-text {
+   
+    height: 15em;
+    width: 20em;
+    top: 8em;
+  }
+
+  .heading-text h2 {
+    font-size: 2.3em;
+    line-height: 1.1em;
+  }
+
+  .centervideo{
+    width: 17.5em;
+
+  }
+  video {
+    width: 280px;
+    height: 210px;
+  }
+
+  .parentimage {
+    width: 17.5em;
+    height: 13.125em;
+  }
+
+  .abouttext{
+    line-height: 1.4em;
+    margin-top: 1.8em;
+    
+  }
+
+  .main-button.dark{
+    margin: 0 0 4.5em 0
+  }
+
+
+  .leadimage h2{
+    font-size: 2em;
+  }
+
+  
+ 
+}
+
+
+
+
+/*---------------- Featured book section-------------------------- */
+.container-highlight {
+  background: rgb(196, 222, 208);
+  background:linear-gradient(90deg, rgb(196, 222, 208) 0%, rgb(212, 233, 222) 47%, rgb(242, 255, 250) 100%);
+  padding: 3em 0 2em 0;
+}
+
+.books {
+  width: 85%;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.books h3 {
+  border-bottom: 0;
+}
+
+.booklist.feature {
+  display: flex;
+  justify-content: flex-start;
+  padding-bottom: 1em;
+  flex-wrap: nowrap;
+}
+
+.booklist {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 1em;
+}
+
+.booklist span {
+  display: block;
+}
+
+.booklist h4 {
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
+
+.booktext {
+  width: 85%;
+
+  padding-bottom: 3em;
+}
+
+.non-featured {
+  display: flex;
+  justify-content: flex-start;
+  padding-bottom: 2em;
+  padding-right: 2em;
+}
+
+.books img {
+  margin: 1em 2em 0 0;
+}
+
+
+
+
+/*  tablet media queries for featured book section*/
+@media (max-width:1080px) {
+  .books {
+    width: 85%;
+
+  }
+
+  .booklist {
+    flex-direction: column;
+  }
+
+  .booklist.feature {
+    flex-direction: row;
+  }
+
+  .booktext {
+    width: auto;
+    padding-bottom: 0;
+  }
+
+  .non-featured {
+    padding-right: 0;
+  }
+
+}
+ /* Mobile media queries for featured books section */
+@media (max-width:660px) {
+
+  .non-featured,
+  .booklist.feature {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* Buy, Value Sell section */
+
+.container-secondary {
+  background-color: #ededed;
+  width: 100%;
+  padding: 4em 0;
+}
+
+.bsvtext {
+  padding: 2em 0;
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  max-width: 1400px;
+  margin: auto;
+  align-items: flex-start;
+}
+
+.bsvtext ul {
+  padding-bottom: 1.5em;
+  margin-left: 1.5em;
+  margin-right: 3em;
+}
+
+.bsvtext ul li {
+  font-size: 1.2em;
+  list-style: none;
+  padding-bottom: .5em;
+
+}
+
+.bsvtext.selling h3 {
+  margin-right: 2.15625em
+}
+
+.bsvtext.selling p {
+  margin-right: 3em;
+  padding-bottom: 1.5em;
+}
+
+.bsvtext.valuing p {
+  margin-left: 3em;
+}
+
+.bsvtext.valuing h3 {
+  margin-left: 2.3em
+}
+
+.bsv.selling img {
+  width: 25em;
+  height: auto;
+  margin-top: 3em;
+}
+
+/* Buy, Value Sell section for both tablet and mobile */
+
+@media (max-width:1080px) {
+
+  .bsvtext {
+    padding: 1em 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bsvtext figure {
+    display: none;
+  }
+
+  .bsvtext.valuing h3 {
+    margin-left: 0;
+  }
+
+  .bsvtext.selling h3 {
+    margin-right: 0em;
+
+  }
+
+  .bsvtext.valuing p {
+    margin: 1em 0;
+  }
+
+  .bsvtext.selling p {
+    margin: 1em 0;
+  }
+}
+
+/* ----------------Footer styles------------------------- */
+.container-footer {
+  border-top: 1px solid #cccccc;
+  background-color: #e2e2e2;
+
+}
+
+footer {
+  width: 85%;
+  max-width: 1400px;
+  margin: auto;
+  padding: 3em 0;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+footer nav {
+  margin: 0em 6em 0 0;
+}
+
+footer h4 {
+  border-bottom: 1px solid #1a1a1a;
+  display: inline-block;
+  padding-right: 4em;
+}
+
+footer nav ul {
+  font-size: 1em;
+  list-style: none;
+}
+
+footer nav ul li {
+  margin: 1em 0;
+  padding-bottom: .2em;
+
+}
+footer nav ul li a {
+  color: #1a1a1a;
+  text-decoration: none;
+}
+
+
+
+/* Footer media queries just for tablet */
+@media (min-width: 661px) and (max-width: 1080px) {
+  footer {
+    justify-content: center;
+  }
+}
+
+/* Footer media queries just for mobile */
+@media (max-width:660px) {
+  footer {
+    flex-direction: column;
+  }
+}
