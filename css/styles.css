@@ -71,6 +71,11 @@ h1 {
   font-weight: 300;
   display: inline-block;
   text-rendering: geometricPrecision;
+  transition: .4s;
+}
+
+.smallheading{
+  font-size: 1.9em;
 }
 
  h2, h3, h4{
@@ -192,7 +197,7 @@ p a {
   margin: auto;
 }
 
-#commonlinkscontainer {
+.commonlinkscontainer {
   border-bottom: 1px solid #ddd;
   height: 1.55em;
   width: 100%;
@@ -202,6 +207,10 @@ p a {
   transition: .3s;
 
 }
+
+
+
+
 
 .commonlinks ul {
   list-style: none;
@@ -233,14 +242,28 @@ p a {
   width: 85%;
   max-width: 1400px;
   margin: auto;
+  position: relative;
+}
+
+.logonav.nopadding{
+  padding: 0;
+  margin-top: -15px;
+ 
 }
 
 .nav-header {
   display: block;
-  width: 17em;
+  margin-right: 2em;
+  
   margin-bottom: 1em;
   display: flex;
 align-items: flex-end;
+}
+
+.nav-header.smaller {
+ 
+  width: 8em;
+ 
 }
 
 .logo {
@@ -250,6 +273,14 @@ align-items: flex-end;
   display: inline-block;
   background-position: center;
   margin-right: .2em;
+  transition: .5s;
+  background-repeat: no-repeat;
+}
+
+.logo.small{
+  background-image: url('../images/logos/emblem_logo_64.png');
+  height: 46px;
+  width: 60px;
 }
 
 /*--------- breadcrumbs navigation ----------*/
@@ -347,6 +378,9 @@ i {
 }
 /*Media queries for header navigation - mobile */
 @media (max-width:660px) {
+  .logonav {
+  align-items: flex-start;
+  }
   nav {
     width: 100%;
   }
@@ -601,7 +635,6 @@ video {
 .parentimage:focus .colimage {
   transform: scale(1.2);
 }
-
 .abouttext {
   color: white;
   font-size: 1.7em;
