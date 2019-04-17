@@ -13,41 +13,49 @@
     <![endif]-->
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/books.css">
+    <script src="./js/main.js"></script>
     <title>Books - Emblem Collectible Books</title>
 </head>
     <body>
-        <header class="mainheader" role="banner">
-            <div class="skiplink">
-                <a href="#content" title="Go to main content of
-                            page">Skip to main content</a>
-            </div>
-            <div class="commonlinkscontainer">
-                <nav class="commonlinks" role="navigation">
-                    <ul>
-                        <li><a href="contact.html">Contact Us</a></li>
-                        <li><a href="#">Accessibility</a></li>
-                        <li><a href="#">Login</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="logonav">
-                    <a class="no-underline" href="index.html">
-                            <div class="nav-header">
-                                <div class="logo"></div>
-                                <h1>Emblem <span class="smaller">Collectible Books</span></h1>
+            <header class="mainheader" role="banner" id="mainheader">
+                    <div class="skiplink">
+                        <a href="#content" title="Go to main content of
+                                page">Skip to main content</a>
+                    </div>
+                    <div class="commonlinkscontainer" id="commonlinkscontainer">
+                        <nav class="commonlinks" role="navigation">
+                            <ul>
+                                <li><a href="contact.html">Contact Us</a></li>
+                                <li><a href="#">Accessibility</a></li>
+                                <li><a href="#">Login</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="logonav" id="logonav">
+                        <nav class="mobilenav">
+                            <a class="no-underline" href="index.html">
+                                <div class="nav-header" id="containerlogo">
+                                    <div class="logo" id="logoimage"></div>
+                                    <h1 id="heading">Emblem <span class="smaller">Collectible Books</span></h1>
+                                </div>
+                            </a>
+                            <div id="nav-icon1">
+                                <span></span>
+                                <span></span>
+                                <span></span>
                             </div>
-                        </a>
-                <nav role="navigation">
-                    <ul class="nav-links">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="#" id="current">Books</a></li>
-                        <li><a href="delivery.html">Delivery</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Books as an investment</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
+                        </nav>
+                        <nav role="navigation" id="navigation" class="navigation">
+                            <ul class="nav-links">
+                                <li><a href="index.html" id="current">Home</a></li>
+                                <li><a href="#">Books</a></li>
+                                <li><a href="delivery.html">Delivery</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Books as an investment</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </header>
         <nav class="breadcrumbs" role="navigation">
             <ul>
                 <li><a href="index.html">Home</a><i class="arrow right"></i></li>

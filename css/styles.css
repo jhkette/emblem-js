@@ -243,6 +243,7 @@ p a {
   max-width: 1400px;
   margin: auto;
   position: relative;
+  transition: all .3s;
 }
 
 .logonav.nopadding{
@@ -291,8 +292,8 @@ align-items: flex-end;
 }
 
 #nav-icon1{
-  width: 40px;
-  height: 15px;
+  width: 28px;
+  height: 30px;
   position: relative;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
@@ -303,12 +304,13 @@ align-items: flex-end;
   -o-transition: .5s ease-in-out;
   transition: .5s ease-in-out;
   cursor: pointer;
+  top: 1.1em;
 }
 
 #nav-icon1 span{
   display: block;
   position: absolute;
-  height: 5px;
+  height: 3px;
   width: 100%;
   background: #1a1a1a;
   border-radius: 2px;
@@ -329,15 +331,15 @@ align-items: flex-end;
 }
 
 #nav-icon1 span:nth-child(2) {
-  top: 12px;
+  top: 8px;
 }
 
 #nav-icon1 span:nth-child(3) {
-  top: 24px;
+  top: 16px;
 }
 
 #nav-icon1.open span:nth-child(1) {
-  top: 12px;
+  top: 8px;
   -webkit-transform: rotate(135deg);
   -moz-transform: rotate(135deg);
   -o-transform: rotate(135deg);
@@ -350,7 +352,7 @@ align-items: flex-end;
 }
 
 #nav-icon1.open span:nth-child(3) {
-  top: 12px;
+  top: 8px;
   -webkit-transform: rotate(-135deg);
   -moz-transform: rotate(-135deg);
   -o-transform: rotate(-135deg);
@@ -456,6 +458,18 @@ i {
   .logonav {
   align-items: flex-start;
   }
+  .logo{
+    background-image: url('../images/logos/emblem_logo_64.png');
+    height: 46px;
+    width: 60px;
+  }
+  h1{
+    font-size: 1.9em;
+  }
+  #nav-icon1{
+    top: .7em;
+  }
+  
   .navigation {
     width: 100%;
     height: 0;
@@ -549,7 +563,9 @@ opacity: .55;
 }
 
 #lead{
-  height: 35em;
+  margin-top: 6.8em;
+  
+  height: 37em;
   background-image: url('../images/home/largebookshelf.jpg');
  
 }
