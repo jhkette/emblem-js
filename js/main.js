@@ -10,8 +10,12 @@ window.onscroll = function() {
 function hideNav(){
     var currentScrollPos = window.pageYOffset;
     const container = document.getElementById("mainheader");
+    const logo = document.getElementById("mainlogo");
     if(currentScrollPos > 200){
     console.log('hello');
-    container.style.top = "-400px";
+    logo.style.height = "100px";
+    }
+    else{
+        container.style.top = "0";
     }
 }
