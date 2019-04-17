@@ -365,7 +365,7 @@ align-items: flex-end;
 .breadcrumbs {
   width: 85%;
   max-width: 1400px;
-  margin: auto;
+  margin: 6.7em auto 0 auto;
 }
 
 .breadcrumbs ul {
@@ -559,12 +559,11 @@ opacity: .55;
   position: relative;
   width: 100%;
   z-index: 0;
+  margin-top: 6.8em;
 
 }
 
 #lead{
-  margin-top: 6.8em;
-  
   height: 37em;
   background-image: url('../images/home/largebookshelf.jpg');
  
