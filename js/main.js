@@ -40,7 +40,7 @@ function hideNav() {
         logo.classList.add("small");
         commonlinks.style.top = '-100px';
         logonav.classList.add("nopadding");
-        mainheader.style.opacity = '.9';
+        mainheader.style.opacity = '.95';
     } else {
         logo.classList.remove("small");
         heading.classList.remove('smallheading');
@@ -69,6 +69,7 @@ function bannerLoop(){
         document.getElementById("lead1").style.opacity = 0;
         setTimeout(function(){
             document.getElementById("lead").style.right = "0px";
+            
             document.getElementById("lead").style.zIndex = "1000";
             document.getElementById("lead1").style.right = "-100%";
             document.getElementById("lead1").style.zIndex = "1500";

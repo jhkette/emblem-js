@@ -10,25 +10,93 @@
 }
 
 /* browser resest */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
 /* display all html5 elements as blocks */
@@ -74,14 +142,16 @@ h1 {
   transition: .4s;
 }
 
-.smallheading{
+.smallheading {
   font-size: 1.9em;
 }
 
- h2, h3, h4{
+h2,
+h3,
+h4 {
   font-family: 'Crimson Text', serif;
   text-rendering: geometricPrecision;
-  
+
 }
 
 
@@ -104,16 +174,16 @@ h3 {
   text-transform: uppercase;
   border-bottom: 1px solid #1a1a1a;
   padding-bottom: .3em;
-  
+
 }
 
 h4 {
   font-size: 1.4em;
   margin: .5em 0 1em 0;
   font-weight: 200;
-  
+
   padding-bottom: .25em;
- 
+
 }
 
 h4 span {
@@ -128,7 +198,9 @@ p {
   text-rendering: optimizeLegibility;
 }
 
-li, dt, dl {
+li,
+dt,
+dl {
   line-height: 1.4em;
 }
 
@@ -145,8 +217,8 @@ p a {
   font-weight: 900;
 }
 
- /* This ensures there is no underline effect on links */
- .no-underline {
+/* This ensures there is no underline effect on links */
+.no-underline {
   text-decoration: none;
 }
 
@@ -167,24 +239,25 @@ p a {
   width: 100%;
   background-color: #ededed;
   box-shadow: 0 4px 6px -4px #a7a4a4;
-  z-index: 3000;
+  z-index: 5000;
   transition: .6s;
- 
+
 }
 
 /*------- Global container used throughout project ---------*/
-.main-container{
+.main-container {
   padding: 3em 0;
-  width: 85%; 
+  width: 85%;
   max-width: 1400px;
   margin: auto;
 }
 
 /* Global container styles -used frequently */
-.main-container ul{
+.main-container ul {
   list-style: none;
 }
-.main-container ul li{
+
+.main-container ul li {
   padding-bottom: .4em;
   font-size: 1.15em;
   text-rendering: optimizeLegibility;
@@ -204,12 +277,10 @@ p a {
   width: 100%;
   position: relative;
   top: 0;
- 
+
   transition: .3s;
 
 }
-
-
 
 
 
@@ -234,6 +305,7 @@ p a {
 .commonlinks li a:focus {
   text-decoration: underline;
 }
+
 /*----- Logo styles ------ */
 .logonav {
   display: flex;
@@ -247,25 +319,25 @@ p a {
   transition: all .3s;
 }
 
-.logonav.nopadding{
+.logonav.nopadding {
   padding: 0;
   margin-top: -15px;
- 
+
 }
 
 .nav-header {
   display: block;
   margin-right: 2em;
-  
+
   margin-bottom: 1em;
   display: flex;
-align-items: flex-end;
+  align-items: flex-end;
 }
 
 .nav-header.smaller {
- 
+
   width: 8em;
- 
+
 }
 
 .logo {
@@ -279,7 +351,7 @@ align-items: flex-end;
   background-repeat: no-repeat;
 }
 
-.logo.small{
+.logo.small {
   background-image: url('../images/logos/emblem_logo_64.png');
   height: 46px;
   width: 60px;
@@ -288,11 +360,11 @@ align-items: flex-end;
 /* hamburger */
 
 /* Icon 1 */
-#nav-icon1{
+#nav-icon1 {
   display: none;
 }
 
-#nav-icon1{
+#nav-icon1 {
   width: 28px;
   height: 30px;
   position: relative;
@@ -308,7 +380,7 @@ align-items: flex-end;
   top: 1.1em;
 }
 
-#nav-icon1 span{
+#nav-icon1 span {
   display: block;
   position: absolute;
   height: 3px;
@@ -422,7 +494,7 @@ i {
   font-size: 1.2em;
   font-weight: 400;
   font-family: 'Work Sans', sans-serif;
-  
+
 }
 
 .nav-links li a {
@@ -443,94 +515,101 @@ i {
 }
 
 /*Media queries for header navigation - tablet */
-@media  (max-width: 1080px) {
-  h1{
+@media (max-width: 1080px) {
+  h1 {
     font-size: 1.9em;
   }
 
   .logonav {
     align-items: flex-start;
-    }
-    .logo{
-      background-image: url('../images/logos/emblem_logo_64.png');
-      height: 46px;
-      width: 60px;
-    }
-   
-    #nav-icon1{
-      top: .7em;
-    }
-    
-    .navigation {
-      width: 100%;
-      height: 0;
-      overflow: hidden;
-      transition: .3s;
-  
-    }
-  
-    .navigation.openmob{
-      height: 20em;
-    }
-    .mobilenav{
-      display: flex;
-      justify-content: space-between;
-      width: 100%;
-    }
-    #nav-icon1{
-      display: block;
-    }
+  }
 
-    #current {
+  .logo {
+    background-image: url('../images/logos/emblem_logo_64.png');
+    height: 46px;
+    width: 60px;
+  }
 
-      background-color: #ededed;
-      color: #236841;
-      border-bottom: 1px solid #535353;
-      font-weight: 900;
-    }
-  
-    #current:hover,
-    #current:focus {
-      color: #226841;
-    }
-  
-    .logonav {
-      flex-direction: column;
-      width: 85%;
-      max-width: 1400px;
-    }
-  
-    .nav-links {
-      height: auto;
-      display: flex;
-      flex-direction: column;
-      background-color: #ededed;
-    }
-  
-    .nav-links li a {
-      display: block;
-      color: #1a1a1a;
-      border-bottom: 1px solid #535353;
-      padding-bottom: .2em;
-    }
-  
-    .nav-links li a:hover, a:focus {
-      border-bottom: 1px solid #535353;
-      background-color: #ededed;
-      color: #226841;
-      width: fit-content;
-      font-weight: 900;
-    }
-    /* because lines wrap */
-    
-  
+  #nav-icon1 {
+    top: .7em;
+  }
+
+  .navigation {
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: .3s;
+
+  }
+
+  .navigation.openmob {
+    height: 20em;
+  }
+
+  .mobilenav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  #nav-icon1 {
+    display: block;
+  }
+
+  #current {
+
+    background-color: #ededed;
+    color: #236841;
+    border-bottom: 1px solid #535353;
+    font-weight: 900;
+  }
+
+  #current:hover,
+  #current:focus {
+    color: #226841;
+  }
+
+  .logonav {
+    flex-direction: column;
+    width: 85%;
+    max-width: 1400px;
+  }
+
+  .nav-links {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #ededed;
+  }
+
+  .nav-links li a {
+    display: block;
+    color: #1a1a1a;
+    border-bottom: 1px solid #535353;
+    padding-bottom: .2em;
+  }
+
+  .nav-links li a:hover,
+  a:focus {
+    border-bottom: 1px solid #535353;
+    background-color: #ededed;
+    color: #226841;
+    width: fit-content;
+    font-weight: 900;
+  }
+
+  /* because lines wrap */
+
+
 }
-@media (max-width: 660px){
- 
-  h3{
+
+@media (max-width: 660px) {
+
+  h3 {
     line-height: 1.1em;
   }
 }
+
 /* slides */
 
 .active {
@@ -572,22 +651,23 @@ i {
 
 /* ------------------Lead image and  Our Business, Our Books, Invest in Books section ------------------------ */
 
-.slideshow-container:before {
+/* .slideshow-container:before {
   content: '';
-position: absolute;
-top: 0;
-right: 0;
-bottom: 0;
-left: 0;
-background: linear-gradient(45deg, rgba(0,0,0,0.75) 0%,rgba(0,0,0,0) 100%);
-opacity: .55; 
-}
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 100%);
+  opacity: .55;
+  z-index: 4000;
+} */
 
-.slideshow-container{
-  
+.slideshow-container {
+
   position: relative;
   overflow: hidden;
-  height: 45em;
+  height: 43em;
   width: 100%;
 }
 
@@ -596,7 +676,7 @@ opacity: .55;
   top: 6.8em;
   width: 100%;
   height: 100%;
-  transition: .9s;
+  transition: .5s ease-in-out;
 }
 
 .leadimage {
@@ -607,22 +687,24 @@ opacity: .55;
 
 }
 
-#lead{
+#lead {
+  background-image: url('../images/home/vintage.jpg');
+
  
+
+}
+
+#lead1 {
+
+  background-image: url('../images/home/penguin.jpg');
+  background-position: bottom;
+
+}
+
+#lead2 {
+
   background-image: url('../images/home/largebookshelf.jpg');
- 
-}
 
-#lead1{
- 
-  background-image: url('../images/home/hand-book.jpg');
- 
-}
-
-#lead2{
- 
-  background-image: url('../images/home/book3.jpg');
- 
 }
 
 .leadimage h2 {
@@ -631,9 +713,10 @@ opacity: .55;
   font-size: 3.5em;
   line-height: .7em;
   padding-bottom: .25em;
+  z-index: 5000;
 
 
-  
+
 }
 
 .leadimage p {
@@ -642,6 +725,7 @@ opacity: .55;
   margin: .5em 0 .4em 0em;
   font-size: 1.55em;
   font-weight: 500;
+  z-index: 5000;
 
 }
 
@@ -655,9 +739,9 @@ opacity: .55;
 }
 
 .main-button {
- 
 
-  background-color:  rgba(35, 104, 65, 0.9);
+
+  background-color: rgba(35, 104, 65, 0.9);
   color: #f5f5f5;
   padding: .85em 2em;
   font-size: 1.1em;
@@ -682,7 +766,7 @@ opacity: .55;
 
 .main-button:hover,
 .main-button:focus {
-  background-color:  #1a1a1a;
+  background-color: #1a1a1a;
   color: #f5f5f5;
   transition: .2s;
   text-decoration: none;
@@ -704,7 +788,7 @@ opacity: .55;
   top: 13em;
   display: inline-block;
   width: 40em;
-  z-index:100;
+  z-index: 100;
 }
 
 main {
@@ -721,13 +805,14 @@ main {
   padding: 2em 0 3em 0;
   justify-content: space-between;
 }
+
 .intro-col {
   width: 22.5em;
   text-align: left;
   margin-top: 1em;
 }
 
-.centervideo{
+.centervideo {
   width: 22.5em;
 }
 
@@ -788,7 +873,7 @@ video {
 }
 
 .parentimage:hover .abouttext,
-.parentimage:focus .abouttext{
+.parentimage:focus .abouttext {
   display: block;
 }
 
@@ -797,16 +882,17 @@ video {
 .parentimage:focus .colimage {
   transform: scale(1.2);
 }
+
 .abouttext {
   color: white;
   font-size: 1.7em;
   font-family: 'Crimson Text', serif;
   margin: auto;
   top: 0;
-  left:0;
-  right:0;
-  position:absolute;
-  text-align:center;
+  left: 0;
+  right: 0;
+  position: absolute;
+  text-align: center;
   padding: .4em;
   margin-top: 3.8em;
   width: 80%;
@@ -844,7 +930,7 @@ I'm not using an '& min width' here as some css will continue to be used by smal
   }
 
   /* video needs to be smaller on smaller screens - otherwise width is defined in html  */
-  
+
 
 }
 
@@ -852,13 +938,14 @@ I'm not using an '& min width' here as some css will continue to be used by smal
 /* Mobile breaking point for lead image and three features - Our Business, Our Books, Invest in Books 
 The mobile still takes some css from tablet css above */
 @media (max-width:660px) {
+
   /* lead image and text is smaller on mob */
-  .leadimage{
+  .leadimage {
     height: 28em;
   }
 
   .heading-text {
-   
+
     height: 15em;
     width: 20em;
     top: 8em;
@@ -869,10 +956,11 @@ The mobile still takes some css from tablet css above */
     line-height: 1.1em;
   }
 
-  .centervideo{
+  .centervideo {
     width: 17.5em;
 
   }
+
   video {
     width: 280px;
     height: 210px;
@@ -883,23 +971,23 @@ The mobile still takes some css from tablet css above */
     height: 13.125em;
   }
 
-  .abouttext{
+  .abouttext {
     line-height: 1.4em;
     margin-top: 1.8em;
-    
+
   }
 
-  .main-button.dark{
+  .main-button.dark {
     margin: 0 0 4.5em 0
   }
 
 
-  .leadimage h2{
+  .leadimage h2 {
     font-size: 2em;
   }
 
-  
- 
+
+
 }
 
 
@@ -908,7 +996,7 @@ The mobile still takes some css from tablet css above */
 /*---------------- Featured book section-------------------------- */
 .container-highlight {
   background: rgb(196, 222, 208);
-  background:linear-gradient(90deg, rgb(196, 222, 208) 0%, rgb(212, 233, 222) 47%, rgb(242, 255, 250) 100%);
+  background: linear-gradient(90deg, rgb(196, 222, 208) 0%, rgb(212, 233, 222) 47%, rgb(242, 255, 250) 100%);
   padding: 3em 0 2em 0;
 }
 
@@ -989,7 +1077,8 @@ The mobile still takes some css from tablet css above */
   }
 
 }
- /* Mobile media queries for featured books section */
+
+/* Mobile media queries for featured books section */
 @media (max-width:660px) {
 
   .non-featured,
@@ -1122,6 +1211,7 @@ footer nav ul li {
   padding-bottom: .2em;
 
 }
+
 footer nav ul li a {
   color: #1a1a1a;
   text-decoration: none;
