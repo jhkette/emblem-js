@@ -167,8 +167,9 @@ p a {
   width: 100%;
   background-color: #ededed;
   box-shadow: 0 4px 6px -4px #a7a4a4;
-  z-index: 1;
-  transition: .6s
+  z-index: 3000;
+  transition: .6s;
+ 
 }
 
 /*------- Global container used throughout project ---------*/
@@ -365,7 +366,7 @@ align-items: flex-end;
 .breadcrumbs {
   width: 85%;
   max-width: 1400px;
-  margin: 6.7em auto 0 auto;
+  margin: 10em auto 0 auto;
 }
 
 .breadcrumbs ul {
@@ -442,104 +443,136 @@ i {
 }
 
 /*Media queries for header navigation - tablet */
-@media (min-width: 661px) and (max-width: 1080px) {
-  .logonav {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .nav-links {
-    margin-bottom: 1em;
-  }
-  
-}
-/*Media queries for header navigation - mobile */
-@media (max-width:660px) {
-  .logonav {
-  align-items: flex-start;
-  }
-  .logo{
-    background-image: url('../images/logos/emblem_logo_64.png');
-    height: 46px;
-    width: 60px;
-  }
+@media  (max-width: 1080px) {
   h1{
     font-size: 1.9em;
   }
-  #nav-icon1{
-    top: .7em;
-  }
-  
-  .navigation {
-    width: 100%;
-    height: 0;
-    overflow: hidden;
-    transition: .3s;
-
-  }
-
-  .navigation.openmob{
-    height: 20em;
-  }
-  .mobilenav{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-  }
-  #nav-icon1{
-    display: block;
-  }
-  
-
-  #current {
-
-    background-color: #ededed;
-    color: #236841;
-    border-bottom: 1px solid #535353;
-    font-weight: 900;
-  }
-
-  #current:hover,
-  #current:focus {
-    color: #226841;
-  }
 
   .logonav {
-    flex-direction: column;
-    width: 85%;
-    max-width: 1400px;
-  }
+    align-items: flex-start;
+    }
+    .logo{
+      background-image: url('../images/logos/emblem_logo_64.png');
+      height: 46px;
+      width: 60px;
+    }
+   
+    #nav-icon1{
+      top: .7em;
+    }
+    
+    .navigation {
+      width: 100%;
+      height: 0;
+      overflow: hidden;
+      transition: .3s;
+  
+    }
+  
+    .navigation.openmob{
+      height: 20em;
+    }
+    .mobilenav{
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+    #nav-icon1{
+      display: block;
+    }
 
-  .nav-links {
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    background-color: #ededed;
-  }
+    #current {
 
-  .nav-links li a {
-    display: block;
-    color: #1a1a1a;
-    border-bottom: 1px solid #535353;
-    padding-bottom: .2em;
-  }
-
-  .nav-links li a:hover, a:focus {
-    border-bottom: 1px solid #535353;
-    background-color: #ededed;
-    color: #226841;
-    width: fit-content;
-    font-weight: 900;
-  }
-  /* because lines wrap */
+      background-color: #ededed;
+      color: #236841;
+      border-bottom: 1px solid #535353;
+      font-weight: 900;
+    }
+  
+    #current:hover,
+    #current:focus {
+      color: #226841;
+    }
+  
+    .logonav {
+      flex-direction: column;
+      width: 85%;
+      max-width: 1400px;
+    }
+  
+    .nav-links {
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      background-color: #ededed;
+    }
+  
+    .nav-links li a {
+      display: block;
+      color: #1a1a1a;
+      border-bottom: 1px solid #535353;
+      padding-bottom: .2em;
+    }
+  
+    .nav-links li a:hover, a:focus {
+      border-bottom: 1px solid #535353;
+      background-color: #ededed;
+      color: #226841;
+      width: fit-content;
+      font-weight: 900;
+    }
+    /* because lines wrap */
+    
+  
+}
+@media (max-width: 660px){
+ 
   h3{
     line-height: 1.1em;
   }
 }
+/* slides */
+
+.active {
+  background-color: #717171;
+}
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+/* @-webkit-keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4
+  }
+
+  to {
+    opacity: 1
+  }
+} */
+
+
+
+
+
 
 /* ------------------Lead image and  Our Business, Our Books, Invest in Books section ------------------------ */
 
-.leadimage:before {
+.slideshow-container:before {
   content: '';
 position: absolute;
 top: 0;
@@ -550,22 +583,45 @@ background: linear-gradient(45deg, rgba(0,0,0,0.75) 0%,rgba(0,0,0,0) 100%);
 opacity: .55; 
 }
 
+.slideshow-container{
+  
+  position: relative;
+  overflow: hidden;
+  height: 45em;
+  width: 100%;
+}
 
+.slideshow-container .leadimage {
+  position: absolute;
+  top: 6.8em;
+  width: 100%;
+  height: 100%;
+  transition: .9s;
+}
 
 .leadimage {
+  top: 7em;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  position: relative;
-  width: 100%;
-  z-index: 0;
-  margin-top: 6.8em;
 
 }
 
 #lead{
-  height: 37em;
+ 
   background-image: url('../images/home/largebookshelf.jpg');
+ 
+}
+
+#lead1{
+ 
+  background-image: url('../images/home/hand-book.jpg');
+ 
+}
+
+#lead2{
+ 
+  background-image: url('../images/home/book3.jpg');
  
 }
 
@@ -647,7 +703,7 @@ opacity: .55;
   position: relative;
   top: 13em;
   display: inline-block;
-  width: 37em;
+  width: 40em;
   z-index:100;
 }
 
@@ -797,7 +853,7 @@ I'm not using an '& min width' here as some css will continue to be used by smal
 The mobile still takes some css from tablet css above */
 @media (max-width:660px) {
   /* lead image and text is smaller on mob */
-  #lead{
+  .leadimage{
     height: 28em;
   }
 
