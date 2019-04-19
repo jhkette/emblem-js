@@ -610,48 +610,10 @@ i {
   }
 }
 
-/* slides */
-
-.active {
-  background-color: #717171;
-}
-
-
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-/* @-webkit-keyframes fade {
-  from {
-    opacity: .4
-  }
-
-  to {
-    opacity: 1
-  }
-}
-
-@keyframes fade {
-  from {
-    opacity: .4
-  }
-
-  to {
-    opacity: 1
-  }
-} */
-
-
-
-
-
 
 /* ------------------Lead image and  Our Business, Our Books, Invest in Books section ------------------------ */
-
-/* .slideshow-container:before {
+/* 
+.slideshow-container:before {
   content: '';
   position: absolute;
   top: 0;
@@ -662,6 +624,9 @@ i {
   opacity: .55;
   z-index: 4000;
 } */
+
+
+/* --------------------SLIDESHOW------------ */
 
 .slideshow-container {
 
@@ -690,15 +655,12 @@ i {
 #lead {
   background-image: url('../images/home/vintage.jpg');
 
- 
-
 }
 
 #lead1 {
 
   background-image: url('../images/home/penguin.jpg');
   background-position: bottom;
-
 }
 
 #lead2 {
@@ -714,10 +676,9 @@ i {
   line-height: .7em;
   padding-bottom: .25em;
   z-index: 5000;
-
-
-
 }
+
+
 
 .leadimage p {
   line-height: 1.3em;
@@ -789,6 +750,7 @@ i {
   display: inline-block;
   width: 40em;
   z-index: 100;
+  display: none;
 }
 
 main {
