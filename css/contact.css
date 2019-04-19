@@ -2,8 +2,6 @@
 
 /* containers */
 
-
-
 .flexmain{
     display: flex;
     justify-content: space-around;
@@ -14,6 +12,7 @@
         height: 15em;
          background-image: url('../images/contact/contact.jpg'); 
         background-position: top;
+        margin-top: 7em;
 }
 #contact::before{
     background: none;
