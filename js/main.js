@@ -1,4 +1,4 @@
-window.onload = init;
+window.addEventListener('DOMContentLoaded', init)
 
 function init() {
     const icon = document.getElementById("nav-icon1");
