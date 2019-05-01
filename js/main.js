@@ -1,11 +1,12 @@
-window.addEventListener('DOMContentLoaded', init)
+
+window.onload = init;
 
 function init() {
     const icon = document.getElementById("nav-icon1");
     window.addEventListener('scroll', debounce(hideNav));
     icon.addEventListener('click', openNav);
     var url = window.location.pathname;
-    if (url == "/index.html") {
+    if (url == "/index.html" || "/") {
         bannerLoop();
         setTimeout(function () {
             displayText();
