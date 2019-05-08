@@ -10,7 +10,7 @@ function init() {
         bannerLoop();
         setTimeout(function () {
             displayText();
-        }, 500);
+        }, 200);
 
     }
 }
