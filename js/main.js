@@ -7,11 +7,13 @@ function init() {
     icon.addEventListener('click', openNav);
     var url = window.location.pathname;
     if (url == "/index.html" || "/") {
-        bannerLoop();
         setTimeout(function () {
+            images[1].classList.remove('none');
+            images[2].classList.remove('none');
             displayText();
-        }, 500);
-
+           }, 500)
+        
+        bannerLoop();
     }
 }
 

@@ -670,7 +670,9 @@ i {
   background-image: url('../images/home/largebookshelf.jpg');
 
 }
-
+.none{
+  display: none;
+}
 
 
 

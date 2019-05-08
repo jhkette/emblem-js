@@ -8,11 +8,10 @@ var startBannerTimer = setInterval(function () {
 function bannerLoop() {
     // select all and use array.from - converts html collection to an array. 
     // means we can access index
-    const imagesarray = Array.from(document.querySelectorAll('.leadimage'));
-    // reverse array so last index appears first 
-    // this means last image will be image[0]
-    // prevents last image appearing momentarily on page load before js is executed
-    const images = imagesarray.reverse();
+    const images = Array.from(document.querySelectorAll('.leadimage'));
+    
+   
+    
     if (bannerStatus === 1) {
         images[1].style.opacity = 0;
         setTimeout(function () {
