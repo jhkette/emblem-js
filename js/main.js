@@ -8,8 +8,8 @@ function init() {
     var url = window.location.pathname;
     if (url == "/index.html" || "/") {
         setTimeout(function () {
-            images[1].classList.remove('none');
-            images[2].classList.remove('none');
+            document.getElementById('lead1').classList.remove('none');
+            document.getElementById('lead2').classList.remove('none');
             displayText();
            }, 500)
         
