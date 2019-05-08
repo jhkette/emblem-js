@@ -6,7 +6,13 @@ var startBannerTimer = setInterval(function () {
 }, bannerTimer)
 
 function bannerLoop() {
-    const images = Array.from(document.querySelectorAll('.leadimage'));
+    // select all and use array.from - converts html collection to an array. 
+    // means we can access index
+    const imagesarray = Array.from(document.querySelectorAll('.leadimage'));
+    // reverse array so last index appears first 
+    // this means last image will be image[0]
+    // prevents last image appearing momentarily on page load before js is executed
+    const images = imagesarray.reverse();
     if (bannerStatus === 1) {
         images[1].style.opacity = 0;
         setTimeout(function () {
@@ -19,10 +25,11 @@ function bannerLoop() {
         }, 500)
         setTimeout(function () {
             images[1].style.opacity = "1";
+            images[2].style.opacity = "1";
         }, 1000)
         bannerStatus = 2;
     } else if (bannerStatus === 2) {
-        images[2].style.opacity = 0;
+
         setTimeout(function () {
             images[1].style.right = "0px";
             images[1].style.zIndex = "1000";
