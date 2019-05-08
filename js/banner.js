@@ -7,7 +7,7 @@ var startBannerTimer = setInterval(function () {
 
 function bannerLoop() {
     const images = Array.from(document.querySelectorAll('.leadimage'));
-    console.log(images[0]);
+    
 
     if (bannerStatus === 1) {
         images[1].style.opacity = 0;
