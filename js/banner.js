@@ -65,6 +65,6 @@ function displayText() {
     const texts = document.querySelectorAll('.heading-text');
     texts.forEach(function (text) {
         text.style.display = "block";
-        text.style.zIndex = "4500";
+        text.style.zIndex = "4000";
     })
 }
