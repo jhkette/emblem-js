@@ -780,6 +780,7 @@ main {
   width: 22.5em;
   text-align: left;
   margin-top: 1em;
+  padding: 1.5em 0;
 }
 
 .centervideo {
@@ -967,7 +968,7 @@ The mobile still takes some css from tablet css above */
 .container-highlight {
   background: rgb(196, 222, 208);
   background: linear-gradient(90deg, rgb(196, 222, 208) 0%, rgb(212, 233, 222) 47%, rgb(242, 255, 250) 100%);
-  padding: 3em 0 2em 0;
+  padding: 4em 0 3em 0;
 }
 
 .books {
