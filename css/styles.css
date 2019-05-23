@@ -142,7 +142,6 @@ h1 {
   display: inline-block;
   text-rendering: geometricPrecision;
   transition: .4s;
-  font-display: swap;
 }
 
 .smallheading {
