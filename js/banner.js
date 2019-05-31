@@ -1,5 +1,5 @@
 var bannerStatus = 1;
-var bannerTimer = 8000;
+var bannerTimer = 11000;
 
 var startBannerTimer = setInterval(function () {
     bannerLoop();
